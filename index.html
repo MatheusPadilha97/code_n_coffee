@@ -12,43 +12,97 @@
             <a href="index.html" class="logo"><img src="img/CODE.png"></a>
             <button class="hamburger"></button>
             <ul class="nav-list">
-                <li><a href="#carrossel">Início</a></li>
+                <li><a href="index.html">Início</a></li>
                 <li><a href="#content-container">Produtos</a></li>
                 <li><a href="#sobre-nos">Sobre nós</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
         </nav>
     </header>
-    <!-- Container -->
-    <div id="barra-cupom">
-        <h3>Frete grátis em compras acima de R$150</h3>
+    <div class="slider">
+        <div class="slider-content">
+            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+            <div class="slider-box primeiro">
+                <img src="img/est. 2024.jpg" alt="slide 1">
+            </div>
+            <div class="slider-box">
+                <img src="img//2.jpg" alt="slide 2">
+            </div>
+            <div class="slider-box">
+                <img src="img/3.jpg" alt="slide 3">
+            </div>
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+        </div>
     </div>
     <div class="container-principal">
-        <section id="carrossel">
-            <p>Carrosel</p>
-        </section>
+
+
+        <!--Produtos-->
 		<section id="content-container">
+            <h2>Canecas</h2>
             <div class="hidden-produtos">
-			    <img alt="grão de café" src="img/images.jpeg">
+			    <img alt="caneca JS" src="img/js_mug.webp">
 			    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mattis scelerisque nisl non posuere.
                 Pellentesque sit amet quam ut urna pellentesque gravida. Aenean posuere sagittis lacus, ut interdum est sagittis a. 
                 Curabitur tortor orci, maximus sed tristique ac, auctor ac elit.</p>
+                <a class="btn-compra" href="#">Comprar</a>
             </div>
 		    <div class="hidden-produtos">
-			    <img alt="grão de café" src="img/images.jpeg">
+			    <img alt="caneca Python" src="img/python_mug.webp">
 			    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mattis scelerisque nisl non posuere.
                 Pellentesque sit amet quam ut urna pellentesque gravida. Aenean posuere sagittis lacus, ut interdum est sagittis a. 
                 Curabitur tortor orci, maximus sed tristique ac, auctor ac elit.</p>
+                <a class="btn-compra" href="#">Comprar</a>
 		    </div>
 		    <div class="hidden-produtos">
-			    <img alt="grão de café" src="img/images.jpeg">
+			    <img alt="caneca Java" src="img/java_mug.webp">
 			    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mattis scelerisque nisl non posuere.
                 Pellentesque sit amet quam ut urna pellentesque gravida. Aenean posuere sagittis lacus, ut interdum est sagittis a.
                 Curabitur tortor orci, maximus sed tristique ac, auctor ac elit.</p>
+                <a class="btn-compra" href="#">Comprar</a>
 		    </div>
         </section>
-        <section class="sobre-nos">
-            <p>Sobre nos</p>
+
+        <!--Sobre nós-->
+        <div class="container-sobre">
+            <h2>Nossa história</h2>
+            <div class="content-sobre">
+                <div class="sobre-nos">
+                    <img alt="img sobre nos" src="img/pexels-photo-1015568.jpeg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sapiente alias blanditiis cumque, inventore totam tempora pariatur,
+                    quas ipsam deleniti doloribus rerum. Dolor tenetur doloremque quod quibusdam quae! Pariatur, consequuntur.</p>
+                </div>
+            </div>
+        </div>
+        <!--Contato-->
+        <section class="contato">
+            <h2>Fale conosco</h2>
+                <div class="contato-content">
+                    <div class="card-contato">
+                        <a href="#"><img src="img/icons8-whatsapp-200.png">
+                        <p>+55 51 9999-8888</p></a>
+                    </div>
+                    <div class="card-contato">
+                        <a href="#"><img src="img/icons8-e-mail-100.png">
+                            <p></p>
+                        </a>
+                    </div>
+                    <div class="card-contato">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab rem totam minima eveniet voluptatum nesciunt, assumenda beatae,
+                        explicabo id, similique dignissimos magnam corporis iste? Minima placeat iste maiores quidem doloribus!</p>
+                    </div>
+                </div>
         </section>
     </div>
     <div class="rodape"></div>

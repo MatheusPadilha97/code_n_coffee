@@ -1,12 +1,14 @@
 // Hamburger Nav
 
 const hamburger = document.querySelector(".hamburger")
-
 const nav = document.querySelector(".nav")
+const myContainer = document.querySelector(".container-principal")
+
 
 hamburger.addEventListener("click", () => {
-    nav.classList.toggle("active")
-})
+        nav.classList.toggle("active")
+    })
+
 
 // Animação scroll Produtos
 
@@ -40,3 +42,26 @@ const myObserverSobre = new IntersectionObserver((entries) => {
 const elementsSobre = document.querySelectorAll('.sobre-nos')
 
 elementsSobre.forEach((elementSobre) => myObserverSobre.observe(elementSobre))
+
+
+// Carrossel
+
+let radio = document.querySelector('.manual-btn')
+let counter = 1
+
+document.getElementById('radio1').checked = true
+
+setInterval(() => {
+    proximaImg()
+}, 4000) 
+
+function proximaImg(){
+    counter++
+
+    if (counter > 3) {
+        counter = 1
+    }
+
+    document.getElementById('radio'+counter).checked = true
+
+}
