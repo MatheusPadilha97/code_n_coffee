@@ -14,8 +14,8 @@
             <ul class="nav-list">
                 <li><a href="index.html">Início</a></li>
                 <li><a href="#content-container">Produtos</a></li>
-                <li><a href="#sobre-nos">Sobre nós</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#container-sobre">Sobre nós</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -25,13 +25,16 @@
             <input type="radio" name="btn-radio" id="radio2">
             <input type="radio" name="btn-radio" id="radio3">
             <div class="slider-box primeiro">
-                <img src="img/est. 2024.jpg" alt="slide 1">
+                <img class="img-desktop" src="img/est. 2024.jpg" alt="slide 1">
+                <img class="img-mobile" src="img/mobile/1.jpg" alt="slide 1">
             </div>
             <div class="slider-box">
-                <img src="img//2.jpg" alt="slide 2">
+                <img class="img-desktop" src="img//2.jpg" alt="slide 2">
+                <img class="img-mobile" src="img/mobile/2.jpg" alt="slide 2">
             </div>
             <div class="slider-box">
-                <img src="img/3.jpg" alt="slide 3">
+                <img class="img-desktop" src="img/3.jpg" alt="slide 3">
+                <img class="img-mobile" src="img/mobile/3.jpg" alt="slide 3">
             </div>
             <div class="nav-auto">
                 <div class="auto-btn1"></div>
@@ -56,26 +59,48 @@
 			    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mattis scelerisque nisl non posuere.
                 Pellentesque sit amet quam ut urna pellentesque gravida. Aenean posuere sagittis lacus, ut interdum est sagittis a. 
                 Curabitur tortor orci, maximus sed tristique ac, auctor ac elit.</p>
-                <a class="btn-compra" href="#">Comprar</a>
+                <a class="btn-compra" href="#">Detalhes</a>
             </div>
 		    <div class="hidden-produtos">
 			    <img alt="caneca Python" src="img/python_mug.webp">
 			    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mattis scelerisque nisl non posuere.
                 Pellentesque sit amet quam ut urna pellentesque gravida. Aenean posuere sagittis lacus, ut interdum est sagittis a. 
                 Curabitur tortor orci, maximus sed tristique ac, auctor ac elit.</p>
-                <a class="btn-compra" href="#">Comprar</a>
+                <a class="btn-compra" href="#">Detalhes</a>
 		    </div>
 		    <div class="hidden-produtos">
 			    <img alt="caneca Java" src="img/java_mug.webp">
 			    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mattis scelerisque nisl non posuere.
                 Pellentesque sit amet quam ut urna pellentesque gravida. Aenean posuere sagittis lacus, ut interdum est sagittis a.
                 Curabitur tortor orci, maximus sed tristique ac, auctor ac elit.</p>
-                <a class="btn-compra" href="#">Comprar</a>
+                <a class="btn-compra" href="#">Detalhes</a>
+		    </div>
+            <h2>Cafés</h2>
+            <div class="hidden-produtos">
+			    <img alt="café1" src="img/café1.webp">
+			    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mattis scelerisque nisl non posuere.
+                Pellentesque sit amet quam ut urna pellentesque gravida. Aenean posuere sagittis lacus, ut interdum est sagittis a. 
+                Curabitur tortor orci, maximus sed tristique ac, auctor ac elit.</p>
+                <a class="btn-compra" href="#">Detalhes</a>
+            </div>
+		    <div class="hidden-produtos">
+			    <img alt="café2" src="img/café2.webp">
+			    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mattis scelerisque nisl non posuere.
+                Pellentesque sit amet quam ut urna pellentesque gravida. Aenean posuere sagittis lacus, ut interdum est sagittis a. 
+                Curabitur tortor orci, maximus sed tristique ac, auctor ac elit.</p>
+                <a class="btn-compra" href="#">Detalhes</a>
+		    </div>
+		    <div class="hidden-produtos">
+			    <img alt="café3" src="img/café3.webp">
+			    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mattis scelerisque nisl non posuere.
+                Pellentesque sit amet quam ut urna pellentesque gravida. Aenean posuere sagittis lacus, ut interdum est sagittis a.
+                Curabitur tortor orci, maximus sed tristique ac, auctor ac elit.</p>
+                <a class="btn-compra" href="#">Detalhes</a>
 		    </div>
         </section>
 
         <!--Sobre nós-->
-        <div class="container-sobre">
+        <section id="container-sobre">
             <h2>Nossa história</h2>
             <div class="content-sobre">
                 <div class="sobre-nos">
@@ -84,25 +109,20 @@
                     quas ipsam deleniti doloribus rerum. Dolor tenetur doloremque quod quibusdam quae! Pariatur, consequuntur.</p>
                 </div>
             </div>
-        </div>
+        </section>
         <!--Contato-->
-        <section class="contato">
+        <section id="contato">
             <h2>Fale conosco</h2>
-                <div class="contato-content">
+                <section class="contato-content">
                     <div class="card-contato">
                         <a href="#"><img src="img/icons8-whatsapp-200.png">
                         <p>+55 51 9999-8888</p></a>
                     </div>
                     <div class="card-contato">
                         <a href="#"><img src="img/icons8-e-mail-100.png">
-                            <p></p>
+                            <p>contato@codeandcoffee.com</p>
                         </a>
                     </div>
-                    <div class="card-contato">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab rem totam minima eveniet voluptatum nesciunt, assumenda beatae,
-                        explicabo id, similique dignissimos magnam corporis iste? Minima placeat iste maiores quidem doloribus!</p>
-                    </div>
-                </div>
         </section>
     </div>
     <div class="rodape"></div>

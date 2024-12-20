@@ -3,11 +3,19 @@
 const hamburger = document.querySelector(".hamburger")
 const nav = document.querySelector(".nav")
 const myContainer = document.querySelector(".container-principal")
-
+const navLinks = document.querySelectorAll(".nav-list a");
 
 hamburger.addEventListener("click", () => {
         nav.classList.toggle("active")
+        
     })
+
+    
+navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            nav.classList.remove("active");
+        });
+    });
 
 
 // Animação scroll Produtos
