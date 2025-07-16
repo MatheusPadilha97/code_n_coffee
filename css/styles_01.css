@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+ *{
+   list-style: none;
+ }
  
  body {
     margin: 0;
@@ -22,6 +25,7 @@
    margin: 0;
    margin-top: 30px;
 }
+
 
 /*Barra de navegação*/
 
@@ -316,6 +320,41 @@
    height: auto;
 }
 
+#form-content{
+   padding: 5px;
+   display: flex;
+   flex-direction: column;
+   align-content: flex-start;
+}
+
+#form-content li {
+   display: flex;
+   align-items: flex-start;
+}
+
+#form-content input {
+   width: 300px;
+   height: 40px;
+   margin-top: 5px;
+}
+#form-content textarea {
+   width: 500px;
+   height: 100px;
+   margin-top: 5px;
+}
+
+#form-content button {
+   width: 100px;
+   height: 50px;
+   background-color: blanchedalmond;
+   font-family: 'Nunito';
+   font-size: 15px;
+   color: rgb(16, 8, 2);
+   border-color: transparent;
+   cursor: pointer;
+   margin-top: 5px;
+}
+
 .rodape{
   width: auto;
   height: 100px;
@@ -342,7 +381,7 @@
 
    .hamburger{
       display: block;
-      z-index: 1000; /*permite que o botão da nav aparece mesmo com o menu aberto.*/
+      z-index: 1000; /*permite que o botão da nav apareça mesmo com o menu aberto.*/
    }
 
    .nav-list {
@@ -451,5 +490,21 @@
    .card-contato{
       padding: 20px;
    }
+
+   #form-content li {
+   display: flex;
+   align-items: flex-start;
+}
+
+#form-content input {
+   width: 300px;
+   height: 40px;
+   margin-top: 5px;
+}
+#form-content textarea {
+   max-width: 400px;
+   height: 100px;
+   margin-top: 5px;
+}
    
 }
