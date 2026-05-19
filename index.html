@@ -7,20 +7,20 @@
     <title>Code n' Coffee</title>
 </head>
 <body>
-    <header class="header">
-        <nav class ="nav"> 
-            <a href="index.html" class="logo"><img src="img/CODE.png"></a>
+    <header id="header">
+        <nav class="nav"> 
+            <a href="index.html" id="logo"><img src="img/CODE.png"></a>
             <button class="hamburger"></button>
             <ul class="nav-list">
                 <li><a href="index.html">Início</a></li>
                 <li><a href="#content-container">Produtos</a></li>
                 <li><a href="#container-sobre">Sobre nós</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#contato-content">Contato</a></li>
             </ul>
         </nav>
     </header>
-    <div class="slider">
-        <div class="slider-content">
+    <div id="slider">
+        <div id="slider-content">
             <input type="radio" name="btn-radio" id="radio1">
             <input type="radio" name="btn-radio" id="radio2">
             <input type="radio" name="btn-radio" id="radio3">
@@ -102,7 +102,7 @@
         <!--Sobre nós-->
         <section id="container-sobre">
             <h2>Nossa história</h2>
-            <div class="content-sobre">
+            <div id="content-sobre">
                 <div class="sobre-nos">
                     <img alt="img sobre nos" src="img/pexels-photo-1015568.jpeg">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sapiente alias blanditiis cumque, inventore totam tempora pariatur,
@@ -111,24 +111,21 @@
             </div>
         </section>
         <!--Contato-->
-        <section id="contato">
-            <h2>Fale conosco</h2>
-                <section class="contato-content">
-                    <div id="form-content">
-                        <form action="">
-                            <ul>
-                                <li><input type="text" value="Nome Completo"></li>
-                                <li><input type="text" value="Telefone"></li>
-                                <li><input type="text" value="E-mail"></li>
-                                <li><textarea name="" id="">Fale sobre o que deseja.</textarea></li>                              
-                                <button type="submit" value="Enviar" onclick="">Enviar</button>
-                            </ul>
-                        </form>
-                    </div>
-                    <div class="card-contato">
-                        <a href="#"><img src="img/icons8-whatsapp-200.png">
-                        <p>+55 51 9999-8888</p></a>
-                    </div>
+        <h2>Fale conosco</h2>
+        <br>
+        <section id="contato-content">
+            <br>
+            <form action="" method="post" onsubmit="">
+                <input type="text" name="nome" value="Nome Completo">
+                <input type="text" name="telefone" value="Telefone">
+                <input type="text" name="email" value="E-mail">
+                <textarea name="mensagem">Digite a sua mensagem.</textarea>                 
+                <button type="submit" value="Enviar">Enviar</button>       
+            </form>
+            <div id="card-contato">
+                <a href="#"><img src="img/icons8-whatsapp-200.png">
+                <p>+55 51 9999-8888</p></a>
+            </div>         
         </section>
     </div>
     <div id="rodape"><p>&copy;Matheus Padilha</p></div>
